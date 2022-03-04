@@ -88,7 +88,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197526}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1366744, y: -14.881723, z: 30.625616}
+  m_LocalPosition: {x: 39.184654, y: 1.3855047, z: 48.037106}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 403006}
@@ -106,7 +106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef0019ec1249abe43a8ef3ab1ca9bc52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartedNewYieldThisFrame: 1
   JobCategory: 26
   placementSounds:
   - castleplacement
@@ -121,12 +120,15 @@ MonoBehaviour:
   Cost:
     Wheat: 0
     Tree: 10
-    Stone: 50
+    Stone: 40
     Charcoal: 0
     Gold: 0
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   CollectedForBuild:
     Wheat: 0
     Tree: 0
@@ -136,6 +138,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   TotalPromisedBuildResources:
     Wheat: 0
     Tree: 0
@@ -145,6 +150,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   Stackable: 0
   StackHeight: 0
   BuildShaderMinYAdjustment: 0
@@ -157,29 +165,22 @@ MonoBehaviour:
   - {fileID: 4000014071436640}
   - {fileID: 4564255132515048}
   builtTime: -Infinity
+  dragPlacementMode: 0
   ignoreRoadCoverageForPlacement: 1
-  useSharedMaterialIfPossible: 0
   showHappinessOverlay: 0
+  isDemolishing: 0
   doBuildAnimation: 1
   fireChance: 0
   BuildTimeAtMax: 10
   BuildAllowedWorkers: 5
   BuildersRequiredOnLocation: 0
-  Yield:
-    Wheat: 0
-    Tree: 0
-    Stone: 0
-    Charcoal: 0
-    Gold: 0
-    Iron: 0
-    Tools: 0
-    Armament: 0
-  YieldInterval: 5
   WorkersForFullYield: 5
-  YieldIntervalMod: 1
+  AttractionSeats: 0
   constructionProgress: 0
+  decayRate: 0.1
+  decayChance: -1
+  decayProtection: 0
   allowOverAndUnderAqueducts: 0
-  PauseYield: 0
   Life: 1
   ModifiedMaxLife: 1
   MaxLife: 3
@@ -5018,3 +5019,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e5e6d64a21f304cb2b8a907adfa828, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  b: {fileID: 11483090}
+  fire: {fileID: 19809686}

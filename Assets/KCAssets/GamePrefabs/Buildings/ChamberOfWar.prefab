@@ -81,7 +81,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef0019ec1249abe43a8ef3ab1ca9bc52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartedNewYieldThisFrame: 1
   JobCategory: 29
   placementSounds:
   - castleplacement
@@ -96,12 +95,15 @@ MonoBehaviour:
   Cost:
     Wheat: 0
     Tree: 25
-    Stone: 75
+    Stone: 50
     Charcoal: 0
-    Gold: 75
+    Gold: 50
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   CollectedForBuild:
     Wheat: 0
     Tree: 0
@@ -111,6 +113,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   TotalPromisedBuildResources:
     Wheat: 0
     Tree: 0
@@ -120,6 +125,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   Stackable: 0
   StackHeight: 0
   BuildShaderMinYAdjustment: 0
@@ -132,29 +140,19 @@ MonoBehaviour:
   - {fileID: 4000014071436640}
   - {fileID: 4429091223927566}
   builtTime: -Infinity
+  dragPlacementMode: 0
   ignoreRoadCoverageForPlacement: 1
-  useSharedMaterialIfPossible: 0
+  useSharedMaterialIfPossible: 1
   showHappinessOverlay: 0
   doBuildAnimation: 1
   fireChance: 0.5
   BuildTimeAtMax: 10
-  BuildAllowedWorkers: 5
+  BuildAllowedWorkers: 7
   BuildersRequiredOnLocation: 0
-  Yield:
-    Wheat: 0
-    Tree: 0
-    Stone: 0
-    Charcoal: 0
-    Gold: 0
-    Iron: 0
-    Tools: 0
-    Armament: 0
-  YieldInterval: 5
   WorkersForFullYield: 5
-  YieldIntervalMod: 1
+  AttractionSeats: 0
   constructionProgress: 0
   allowOverAndUnderAqueducts: 0
-  PauseYield: 0
   Life: 1
   ModifiedMaxLife: 1
   MaxLife: 3

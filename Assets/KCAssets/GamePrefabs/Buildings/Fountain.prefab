@@ -47,6 +47,10 @@ Transform:
   - {fileID: 4903438325452460}
   - {fileID: 4645072152991788}
   - {fileID: 4175212435778704}
+  - {fileID: 4087759575640824}
+  - {fileID: 4396556056325238}
+  - {fileID: 4159441742798756}
+  - {fileID: 4565965309857896}
   m_Father: {fileID: 441170}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -57,7 +61,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 187762}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.659332, y: -0.88731337, z: -10.4616165}
+  m_LocalPosition: {x: -8.112728, y: -61.23086, z: -6.3311844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 425744}
@@ -88,14 +92,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef0019ec1249abe43a8ef3ab1ca9bc52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartedNewYieldThisFrame: 1
   JobCategory: 11
   placementSounds: []
   SelectionSounds:
-  - BuildingSelectWell
+  - BuildingSelectFountain
   UniqueName: fountain
   CategoryName: fountain
-  DisplayModel: {fileID: 1814448285182714, guid: 4d4afe4f6a3ba0f4eb6ddb39e7904852,
+  DisplayModel: {fileID: 1814448285182714, guid: 9831301b67a90974894bb745debe20ff,
     type: 2}
   SubStructure: 0
   skillUsed: 
@@ -109,6 +112,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   CollectedForBuild:
     Wheat: 0
     Tree: 0
@@ -118,6 +124,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   TotalPromisedBuildResources:
     Wheat: 0
     Tree: 0
@@ -127,36 +136,40 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   Stackable: 0
   StackHeight: 0
   BuildShaderMinYAdjustment: 0
   BuildShaderMaxYAdjustment: 0
   meshesRequiringOutline: []
   skinnedMeshesRequiringOutline: []
-  personPositions: []
+  personPositions:
+  - {fileID: 4087759575640824}
+  - {fileID: 4396556056325238}
+  - {fileID: 4159441742798756}
+  - {fileID: 4565965309857896}
   builtTime: -Infinity
-  useSharedMaterialIfPossible: 1
+  dragPlacementMode: 0
+  ignoreRoadCoverageForPlacement: 0
   showHappinessOverlay: 0
+  isDemolishing: 0
   doBuildAnimation: 1
   fireChance: 0
   BuildTimeAtMax: 5
   BuildAllowedWorkers: 5
   BuildersRequiredOnLocation: 0
-  Yield:
-    Wheat: 0
-    Tree: 0
-    Stone: 0
-    Charcoal: 0
-    Gold: 0
-    Iron: 0
-    Tools: 0
-    Armament: 0
-  YieldInterval: 5
   WorkersForFullYield: 0
-  YieldIntervalMod: 1
+  AttractionSeats: 4
   constructionProgress: 0
+  decayRate: 0.1
+  decayChance: 2
+  decayProtection: 0
+  transportCartsCanTravelOn: 0
+  troopsCanWalkOn: 0
   allowOverAndUnderAqueducts: 1
-  PauseYield: 0
+  allowCastleBlocksOnTop: 0
   Life: 1
   ModifiedMaxLife: 1
   MaxLife: 1
@@ -207,6 +220,51 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 187762}
   m_IsPrefabAsset: 1
+--- !u!1 &1102310530730406
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4396556056325238}
+  m_Layer: 8
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1225891213203218
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4159441742798756}
+  m_Layer: 8
+  m_Name: GameObject (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1326018862183816
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4565965309857896}
+  m_Layer: 8
+  m_Name: GameObject (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1337228034350356
 GameObject:
   m_ObjectHideFlags: 1
@@ -260,6 +318,47 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1942959315750118
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4087759575640824}
+  m_Layer: 8
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4087759575640824
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1942959315750118}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.108, y: 0, z: -0.463}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 425744}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4159441742798756
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1225891213203218}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.39, y: 0, z: -0.044}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 425744}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4175212435778704
 Transform:
   m_ObjectHideFlags: 1
@@ -273,6 +372,32 @@ Transform:
   m_Father: {fileID: 425744}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!4 &4396556056325238
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1102310530730406}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.068, y: 0, z: -0.458}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 425744}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4565965309857896
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1326018862183816}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.016, y: 0, z: 0.435}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 425744}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4645072152991788
 Transform:
   m_ObjectHideFlags: 1

@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 408940}
   - component: {fileID: 11490442}
   - component: {fileID: 114905909520903000}
+  - component: {fileID: 114798565707165108}
   m_Layer: 8
   m_Name: BlackSmith
   m_TagString: Tavern
@@ -51,7 +52,6 @@ Transform:
   - {fileID: 4223964031203590}
   - {fileID: 4000012367219302}
   - {fileID: 4829577555948796}
-  - {fileID: 4710320538118194}
   - {fileID: 4014999126636588}
   m_Father: {fileID: 408940}
   m_RootOrder: 0
@@ -63,7 +63,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 110454}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.8967905, y: -4.69201, z: 32.94844}
+  m_LocalPosition: {x: 83.97577, y: -1.3247342, z: 53.49336}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 402932}
@@ -81,7 +81,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef0019ec1249abe43a8ef3ab1ca9bc52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartedNewYieldThisFrame: 1
   JobCategory: 14
   placementSounds: []
   SelectionSounds:
@@ -101,6 +100,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   CollectedForBuild:
     Wheat: 0
     Tree: 0
@@ -110,6 +112,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   TotalPromisedBuildResources:
     Wheat: 0
     Tree: 0
@@ -119,6 +124,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   Stackable: 0
   StackHeight: 0
   BuildShaderMinYAdjustment: 0
@@ -132,30 +140,25 @@ MonoBehaviour:
   - {fileID: 4448309602113328}
   - {fileID: 4118816501475710}
   builtTime: -Infinity
-  allowPathDragPlacement: 0
+  dragPlacementMode: 0
   ignoreRoadCoverageForPlacement: 0
-  useSharedMaterialIfPossible: 1
   showHappinessOverlay: 0
+  isDemolishing: 0
   doBuildAnimation: 1
   fireChance: 0.5
   BuildTimeAtMax: 10
   BuildAllowedWorkers: 7
   BuildersRequiredOnLocation: 0
-  Yield:
-    Wheat: 0
-    Tree: 0
-    Stone: 0
-    Charcoal: 0
-    Gold: 0
-    Iron: 0
-    Tools: 2
-    Armament: 0
-  YieldInterval: 16
   WorkersForFullYield: 5
-  YieldIntervalMod: 1
+  AttractionSeats: 0
   constructionProgress: 0
+  decayRate: 0.1
+  decayChance: -1
+  decayProtection: 0
+  transportCartsCanTravelOn: 0
+  troopsCanWalkOn: 0
   allowOverAndUnderAqueducts: 0
-  PauseYield: 0
+  allowCastleBlocksOnTop: 0
   Life: 1
   ModifiedMaxLife: 1
   MaxLife: 2
@@ -343,22 +346,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1484478024658566
-GameObject:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4710320538118194}
-  - component: {fileID: 108855470361783974}
-  m_Layer: 8
-  m_Name: Point light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1526075839913086
 GameObject:
   m_ObjectHideFlags: 1
@@ -495,7 +482,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 402932}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4115474566951426
 Transform:
@@ -602,19 +589,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4829577555948796}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4710320538118194
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1484478024658566}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.427, y: 0.224, z: -0.5252}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 402932}
-  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4829577555948796
 Transform:
@@ -736,43 +710,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1.21}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!108 &108855470361783974
-Light:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1484478024658566}
-  m_Enabled: 1
-  serializedVersion: 8
-  m_Type: 2
-  m_Color: {r: 1, g: 0.9432049, b: 0.7058823, a: 1}
-  m_Intensity: 1
-  m_Range: 8
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!114 &114121151016439602
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -784,15 +721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c237c278d4ae10d489120ec778919920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TestAmount:
-    Wheat: 0
-    Tree: 0
-    Stone: 0
-    Charcoal: 0
-    Gold: 0
-    Iron: 0
-    Tools: 0
-    Armament: 0
+  TestAmount: 0
 --- !u!114 &114160129763886680
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -814,7 +743,9 @@ MonoBehaviour:
   rowAlternateRotation: 1
   InitCount: 0
   HeightMultiplier: 1
+  useGameObjects: 0
   refresh: 0
+  stackContainerBespoke: {fileID: 0}
 --- !u!114 &114167582132233246
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -836,7 +767,9 @@ MonoBehaviour:
   rowAlternateRotation: 1
   InitCount: 0
   HeightMultiplier: 1
+  useGameObjects: 0
   refresh: 0
+  stackContainerBespoke: {fileID: 0}
 --- !u!114 &114345525490226264
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -866,6 +799,32 @@ MonoBehaviour:
     Type: 6
   - Stack: {fileID: 114160129763886680}
     Type: 7
+--- !u!114 &114798565707165108
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 241a9257096ac1746b3ae549f039c6cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Yield:
+    Wheat: 0
+    Tree: 0
+    Stone: 0
+    Charcoal: 0
+    Gold: 0
+    Iron: 0
+    Tools: 2
+    Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
+  YieldInterval: 16
+  YieldIntervalMod: 1
+  PauseYield: 0
 --- !u!114 &114844512020788914
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -887,7 +846,9 @@ MonoBehaviour:
   rowAlternateRotation: 1
   InitCount: 0
   HeightMultiplier: 1
+  useGameObjects: 0
   refresh: 0
+  stackContainerBespoke: {fileID: 0}
 --- !u!114 &114905909520903000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -908,6 +869,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 27
     Armament: 27
+    Fish: 0
+    Apple: 0
+    Pork: 0
   VisualStacks: {fileID: 114498351144832506}
   productionPipelineBlockedMsg: 
   pickupLocation: {fileID: 4014999126636588}
@@ -920,9 +884,11 @@ MonoBehaviour:
     Iron: 7
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   fire: {fileID: 198728107257074894}
   fire2: {fileID: 198000010947981902}
-  fireLight: {fileID: 108855470361783974}
 --- !u!114 &114999464017107080
 MonoBehaviour:
   m_ObjectHideFlags: 1

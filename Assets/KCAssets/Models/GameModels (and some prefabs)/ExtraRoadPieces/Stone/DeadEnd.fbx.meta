@@ -1,0 +1,169 @@
+fileFormatVersion: 2
+guid: 992edce7e2359454f9156fbb5fdf5336
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Normal - Dead End
+    100004: Normal - Elbow
+    100006: Normal - Four Way
+    100008: Normal - Straight
+    100010: Normal - Three Way
+    100012: Prop - Long Fence
+    100014: Prop - Short Fence
+    100016: Prop - Stick
+    100018: Stone - Dead End
+    100020: Stone - Elbow
+    100022: Stone - Four Way
+    100024: Stone - Straight
+    100026: Stone - Three Way
+    400000: //RootNode
+    400002: Normal - Dead End
+    400004: Normal - Elbow
+    400006: Normal - Four Way
+    400008: Normal - Straight
+    400010: Normal - Three Way
+    400012: Prop - Long Fence
+    400014: Prop - Short Fence
+    400016: Prop - Stick
+    400018: Stone - Dead End
+    400020: Stone - Elbow
+    400022: Stone - Four Way
+    400024: Stone - Straight
+    400026: Stone - Three Way
+    2100000: lambert1
+    2100002: lambert1.001
+    2100004: lambert1.002
+    2100006: lambert1.003
+    2100008: lambert1.004
+    2100010: lambert1.005
+    2100012: phong1
+    2100014: phong1.001
+    2100016: phong1.002
+    2100018: phong1.003
+    2100020: phong1.004
+    2100022: lambert1.008
+    2300000: Normal - Dead End
+    2300002: Normal - Elbow
+    2300004: Normal - Four Way
+    2300006: Normal - Straight
+    2300008: Normal - Three Way
+    2300010: Prop - Long Fence
+    2300012: Prop - Short Fence
+    2300014: Prop - Stick
+    2300016: Stone - Dead End
+    2300018: Stone - Elbow
+    2300020: Stone - Four Way
+    2300022: Stone - Straight
+    2300024: Stone - Three Way
+    2300026: //RootNode
+    3300000: Normal - Dead End
+    3300002: Normal - Elbow
+    3300004: Normal - Four Way
+    3300006: Normal - Straight
+    3300008: Normal - Three Way
+    3300010: Prop - Long Fence
+    3300012: Prop - Short Fence
+    3300014: Prop - Stick
+    3300016: Stone - Dead End
+    3300018: Stone - Elbow
+    3300020: Stone - Four Way
+    3300022: Stone - Straight
+    3300024: Stone - Three Way
+    3300026: //RootNode
+    4300000: Prop - Short Fence
+    4300002: Prop - Long Fence
+    4300004: Prop - Stick
+    4300006: Normal - Straight
+    4300008: Normal - Elbow
+    4300010: Normal - Three Way
+    4300012: Normal - Four Way
+    4300014: Stone - Straight
+    4300016: Stone - Elbow
+    4300018: Stone - Three Way
+    4300020: Stone - Four Way
+    4300022: Stone - Dead End
+    4300024: Normal - Dead End
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: fullroadbundle
+  assetBundleVariant: 

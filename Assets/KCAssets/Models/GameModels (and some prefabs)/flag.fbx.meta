@@ -12,6 +12,7 @@ ModelImporter:
     3300000: pasted__pCube27
     3300002: //RootNode
     4300000: pasted__pCube27
+    4300002: flag:pasted__pCube27
     9500000: //RootNode
     2186277476908879412: ImportLogs
   externalObjects:
@@ -20,6 +21,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: lambert1
     second: {fileID: 2100000, guid: 712404438b80a4279abd2e344b497790, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong1
+    second: {fileID: 2100000, guid: 60e5b33be8cf4d540b06e8defec2374d, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

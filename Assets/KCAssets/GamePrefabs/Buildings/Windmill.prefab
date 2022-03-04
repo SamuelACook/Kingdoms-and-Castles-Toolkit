@@ -153,6 +153,7 @@ GameObject:
   - component: {fileID: 483574}
   - component: {fileID: 11483090}
   - component: {fileID: 11452634}
+  - component: {fileID: 114647408756653126}
   m_Layer: 8
   m_Name: Windmill
   m_TagString: Windmill
@@ -280,7 +281,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197526}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.744363, y: -12.51, z: 23.360703}
+  m_LocalPosition: {x: 31.521725, y: -6.8529906, z: -37.038292}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 403006}
@@ -492,14 +493,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef0019ec1249abe43a8ef3ab1ca9bc52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartedNewYieldThisFrame: 1
   JobCategory: 28
   placementSounds: []
   SelectionSounds:
   - BuildingSelectWindmill
   UniqueName: windmill
   CategoryName: windmill
-  DisplayModel: {fileID: 1951332761380142, guid: 9e2e02d95159a744294ef0286430eab0,
+  DisplayModel: {fileID: 1951332761380142, guid: ef3627e9594deeb4da40331f5e0330cf,
     type: 2}
   SubStructure: 0
   skillUsed: Agriculture
@@ -513,6 +513,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   CollectedForBuild:
     Wheat: 0
     Tree: 0
@@ -522,6 +525,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   TotalPromisedBuildResources:
     Wheat: 0
     Tree: 0
@@ -531,6 +537,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   Stackable: 0
   StackHeight: 0
   BuildShaderMinYAdjustment: 0
@@ -542,28 +551,25 @@ MonoBehaviour:
   - {fileID: 477916}
   - {fileID: 484104}
   builtTime: -Infinity
-  useSharedMaterialIfPossible: 1
+  dragPlacementMode: 0
+  ignoreRoadCoverageForPlacement: 1
   showHappinessOverlay: 0
+  isDemolishing: 0
   doBuildAnimation: 1
   fireChance: 0.5
   BuildTimeAtMax: 10
   BuildAllowedWorkers: 5
   BuildersRequiredOnLocation: 0
-  Yield:
-    Wheat: 0
-    Tree: 0
-    Stone: 0
-    Charcoal: 0
-    Gold: 0
-    Iron: 0
-    Tools: 0
-    Armament: 0
-  YieldInterval: 20
   WorkersForFullYield: 2
-  YieldIntervalMod: 1
+  AttractionSeats: 0
   constructionProgress: 0
+  decayRate: 0.1
+  decayChance: -1
+  decayProtection: 0
+  transportCartsCanTravelOn: 0
+  troopsCanWalkOn: 0
   allowOverAndUnderAqueducts: 0
-  PauseYield: 0
+  allowCastleBlocksOnTop: 0
   Life: 1
   ModifiedMaxLife: 1
   MaxLife: 2
@@ -749,3 +755,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Building: {fileID: 0}
   Collider: {fileID: 0}
+--- !u!114 &114647408756653126
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee91f990d771e6e4d95d5ba66aba5bd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  b: {fileID: 11483090}
+  toHide:
+  - {fileID: 153326}
+  - {fileID: 160484}
+  - {fileID: 143696}
+  - {fileID: 191422}

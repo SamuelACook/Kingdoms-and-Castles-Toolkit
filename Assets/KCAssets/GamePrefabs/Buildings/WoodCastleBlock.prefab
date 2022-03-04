@@ -210,7 +210,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef0019ec1249abe43a8ef3ab1ca9bc52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartedNewYieldThisFrame: 1
   JobCategory: 11
   placementSounds: []
   SelectionSounds:
@@ -230,6 +229,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   CollectedForBuild:
     Wheat: 0
     Tree: 0
@@ -239,6 +241,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   TotalPromisedBuildResources:
     Wheat: 0
     Tree: 0
@@ -248,6 +253,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   Stackable: 1
   StackHeight: 2
   BuildShaderMinYAdjustment: 0
@@ -258,28 +266,22 @@ MonoBehaviour:
   builtTime: 10
   dragPlacementMode: 1
   ignoreRoadCoverageForPlacement: 1
-  useSharedMaterialIfPossible: 1
   showHappinessOverlay: 0
+  isDemolishing: 0
   doBuildAnimation: 1
   fireChance: 0.5
   BuildTimeAtMax: 5
   BuildAllowedWorkers: 5
   BuildersRequiredOnLocation: 0
-  Yield:
-    Wheat: 0
-    Tree: 0
-    Stone: 0
-    Charcoal: 0
-    Gold: 0
-    Iron: 0
-    Tools: 0
-    Armament: 0
-  YieldInterval: 5
   WorkersForFullYield: 0
-  YieldIntervalMod: 1
+  AttractionSeats: 0
   constructionProgress: 0
-  allowOverAndUnderAqueducts: 0
-  PauseYield: 1
+  decayRate: 0.1
+  decayChance: 1
+  decayProtection: 0
+  troopsCanWalkOn: 1
+  allowOverAndUnderAqueducts: 1
+  allowCastleBlocksOnTop: 3
   Life: 2
   ModifiedMaxLife: 1
   MaxLife: 1

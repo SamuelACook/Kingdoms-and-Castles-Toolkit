@@ -1168,15 +1168,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef0019ec1249abe43a8ef3ab1ca9bc52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartedNewYieldThisFrame: 1
   JobCategory: 30
   placementSounds:
   - roadplacement
   SelectionSounds:
-  - BuildingStoneRoadSelect
+  - BuildingSelectCemeteryTile
   UniqueName: cemeterydummy
   CategoryName: cemetery
-  DisplayModel: {fileID: 1741817432060244, guid: 069645936273b6c4fa703844588f4bf4,
+  DisplayModel: {fileID: 1741817432060244, guid: 36b484d328491dd44bfd3310ce24c9b0,
     type: 2}
   SubStructure: 0
   skillUsed: 
@@ -1190,6 +1189,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   CollectedForBuild:
     Wheat: 0
     Tree: 0
@@ -1199,6 +1201,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   TotalPromisedBuildResources:
     Wheat: 0
     Tree: 0
@@ -1208,6 +1213,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   Stackable: 0
   StackHeight: 0
   BuildShaderMinYAdjustment: 0
@@ -1217,28 +1225,25 @@ MonoBehaviour:
   personPositions:
   - {fileID: 4698338539789620}
   builtTime: -Infinity
-  useSharedMaterialIfPossible: 1
+  dragPlacementMode: 0
+  ignoreRoadCoverageForPlacement: 0
   showHappinessOverlay: 0
+  isDemolishing: 0
   doBuildAnimation: 1
   fireChance: 0
   BuildTimeAtMax: 1
   BuildAllowedWorkers: 5
   BuildersRequiredOnLocation: 0
-  Yield:
-    Wheat: 0
-    Tree: 0
-    Stone: 0
-    Charcoal: 0
-    Gold: 0
-    Iron: 0
-    Tools: 0
-    Armament: 0
-  YieldInterval: 5
   WorkersForFullYield: 0
-  YieldIntervalMod: 1
+  AttractionSeats: 0
   constructionProgress: 0
+  decayRate: 0.1
+  decayChance: 0
+  decayProtection: 0
+  transportCartsCanTravelOn: 0
+  troopsCanWalkOn: 0
   allowOverAndUnderAqueducts: 1
-  PauseYield: 0
+  allowCastleBlocksOnTop: 0
   Life: 1
   ModifiedMaxLife: 1
   MaxLife: 1

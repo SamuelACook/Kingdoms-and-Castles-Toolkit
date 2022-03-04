@@ -93,6 +93,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   CollectedForBuild:
     Wheat: 0
     Tree: 0
@@ -102,6 +105,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   TotalPromisedBuildResources:
     Wheat: 0
     Tree: 0
@@ -111,6 +117,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   Stackable: 0
   StackHeight: 0
   BuildShaderMinYAdjustment: 0
@@ -120,6 +129,7 @@ MonoBehaviour:
   personPositions:
   - {fileID: 4530093785337722}
   builtTime: -Infinity
+  dragPlacementMode: 0
   ignoreRoadCoverageForPlacement: 1
   useSharedMaterialIfPossible: 1
   showHappinessOverlay: 0
@@ -137,15 +147,18 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   YieldInterval: 5
   WorkersForFullYield: 20
   YieldIntervalMod: 1
   constructionProgress: 0
   allowOverAndUnderAqueducts: 0
   PauseYield: 0
-  Life: 1
-  ModifiedMaxLife: 1
-  MaxLife: 3
+  Life: 10
+  ModifiedMaxLife: 10
+  MaxLife: 10
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

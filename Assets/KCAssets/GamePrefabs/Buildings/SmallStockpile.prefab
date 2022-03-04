@@ -661,7 +661,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef0019ec1249abe43a8ef3ab1ca9bc52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartedNewYieldThisFrame: 1
   JobCategory: 8
   placementSounds: []
   SelectionSounds:
@@ -722,31 +721,23 @@ MonoBehaviour:
   builtTime: -Infinity
   dragPlacementMode: 2
   ignoreRoadCoverageForPlacement: 0
-  useSharedMaterialIfPossible: 1
   showHappinessOverlay: 0
+  isDemolishing: 0
   doBuildAnimation: 1
   fireChance: 0.5
   BuildTimeAtMax: 15
   BuildAllowedWorkers: 3
   BuildersRequiredOnLocation: 0
-  Yield:
-    Wheat: 0
-    Tree: 0
-    Stone: 0
-    Charcoal: 0
-    Gold: 0
-    Iron: 0
-    Tools: 0
-    Armament: 0
-    Fish: 0
-    Apple: 0
-    Pork: 0
-  YieldInterval: 0
   WorkersForFullYield: 2
-  YieldIntervalMod: 1
+  AttractionSeats: 0
   constructionProgress: 0
+  decayRate: 0.1
+  decayChance: -1
+  decayProtection: 0
+  transportCartsCanTravelOn: 1
+  troopsCanWalkOn: 0
   allowOverAndUnderAqueducts: 0
-  PauseYield: 1
+  allowCastleBlocksOnTop: 0
   Life: 1
   ModifiedMaxLife: 1
   MaxLife: 1

@@ -32,11 +32,12 @@
 
 		// Use shader model 3.0 target, to get nicer looking lighting
 		#pragma target 3.0
-
 		
-		
-
 		sampler2D _MainTex;
+		sampler2D _Fog;
+
+		fixed _Width;
+		fixed _Height;
 
 		struct Input {
 			float2 uv_MainTex;
@@ -80,8 +81,7 @@
 			return frac(sin(n)*43758.5453);
 		}
 
-		float noise(float2 uv) {
-			float3 x = float3(uv, 0);
+		float noise(float3 x) {
 
 			float3 p = floor(x);
 			float3 f = frac(x);
@@ -108,46 +108,51 @@
 			return f;
 		}
 
-		float3 voronoi(in float2 x)
+		float4 voronoi(in float3 x)
 		{
-			int2 p = int2(floor(x));
-			float2 f = frac(x);
+			int3 p = int3(floor(x));
+			float3 f = frac(x);
 
-			int2 mb = int2(0, 0);
-			float2 mr = float2(0.0, 0.0);
-			float2 mg = float2(0.0, 0.0);
+			int3 mb = int3(0, 0, 0);
+			float3 mr = float3(0.0, 0.0, 0.0);
+			float3 mg = float3(0.0, 0.0, 0.0);
 
 			float md = 8.0;
 			for (int j = -1; j <= 1; ++j)
 				for (int i = -1; i <= 1; ++i)
 				{
-					int2 b = int2(i, j);
-					float2  r = float2(b) + noise(float2(p + b)) - f;
-					float2 g = float2(float(i), float(j));
-					float n = noise(float2(p)+g);
-					float2 o = float2(n, n);
-					float d = length(r);
-
-					if (d<md)
+					for (int h = -1; h <= 1; ++h)
 					{
-						md = d;
-						mr = r;
-						mg = g;
+						int3 b = int3(i, j, h);
+						float3  r = float3(b) + noise(float3(p + b)) - f;
+						float3 g = float3(float(i), float(j), float(h));
+						float n = noise(float3(p)+g);
+						float3 o = float3(n, n, n);
+						float d = length(r);
+
+						if (d<md)
+						{
+							md = d;
+							mr = r;
+							mg = g;
+						}
 					}
 				}
 
 			md = 8.0;
 			for (int j = -2; j <= 2; ++j)
 				for (int i = -2; i <= 2; ++i)
-				{
-					int2 b = float2(i, j);
-					float2 r = float2(b) + noise(float2(p + b)) - f;
+					for (int h = -2; h <= 2; ++h)
+					{
+						int3 b = float3(i, j, h);
+						float3 r = float3(b) + noise(float3(p + b)) - f;
 
 
-					if (length(r - mr)>0.00001)
-						md = min(md, dot(0.5*(mr + r), normalize(r - mr)));
-				}
-			return float3(md, mr);
+						if (length(r - mr)>0.00001)
+							md = min(md, dot(0.5*(mr + r), normalize(r - mr)));
+					}
+
+			return float4(md, mr);
 		}
 
 		float expEaseIn(float t, float b, float c, float d)
@@ -169,13 +174,63 @@
             return length(field) > 0.5;
         }
 
+		float PI = 3.1415926535897932384626433832795;
+            
+        float4 setAxisAngle (float3 axis, float rad) {
+            rad = rad * 0.5;
+            float s = sin(rad);
+            return float4(s * axis[0], s * axis[1], s * axis[2], cos(rad));
+        }
+
+		float3 xUnitVec3 = float3(1.0, 0.0, 0.0);
+        float3 yUnitVec3 = float3(0.0, 1.0, 0.0);
+
+		float4 rotationTo (float3 a, float3 b) {
+            float vecDot = dot(a, b);
+            float3 tmpvec3 = float3(0, 0, 0);
+            if (vecDot < -0.999999) {
+            tmpvec3 = cross(xUnitVec3, a);
+            if (length(tmpvec3) < 0.000001) {
+                tmpvec3 = cross(yUnitVec3, a);
+            }
+            tmpvec3 = normalize(tmpvec3);
+            return setAxisAngle(tmpvec3, PI);
+            } else if (vecDot > 0.999999) {
+            return float4(0,0,0,1);
+            } else {
+            tmpvec3 = cross(a, b);
+            float4 _out = float4(tmpvec3[0], tmpvec3[1], tmpvec3[2], 1.0 + vecDot);
+            return normalize(_out);
+            }
+        }
+            
+        float4 multQuat(float4 q1, float4 q2) {
+            return float4(
+            q1.w * q2.x + q1.x * q2.w + q1.z * q2.y - q1.y * q2.z,
+            q1.w * q2.y + q1.y * q2.w + q1.x * q2.z - q1.z * q2.x,
+            q1.w * q2.z + q1.z * q2.w + q1.y * q2.x - q1.x * q2.y,
+            q1.w * q2.w - q1.x * q2.x - q1.y * q2.y - q1.z * q2.z
+            );
+        }
+            
+        float3 rotateVector( float4 quat, float3 vec ) {
+            // https://twistedpairdevelopment.wordpress.com/2013/02/11/rotating-a-vector-by-a-quaternion-in-glsl/
+            float4 qv = multQuat( quat, float4(vec, 0.0) );
+            return multQuat( qv, float4(-quat.x, -quat.y, -quat.z, quat.w) ).xyz;
+        }
+
 		void surf (Input IN, inout SurfaceOutputStandard o) {
 			resolution = _ScreenParams.xy;
 
 			fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
-			
-			fixed4 lerpedSnow = lerp(c, _SnowColor, _Snow);
 
+			fixed4 fogPixel = tex2D (_Fog, IN.worldPos.xz / float2(_Width, _Height));
+
+			//Apply fog gray
+			fixed3 fadedgray = lerp(c, dot(c.rgb, float3(0.2, 0.39, 0.05)), 0.75);
+			o.Albedo = lerp(c.rgb, fadedgray, 1 - fogPixel.a);
+
+			fixed4 lerpedSnow = lerp(c, _SnowColor, _Snow);
 			float useSnow = when_gt(dot(IN.worldNormal, fixed3(0, 1, 0)), 0.5f);
 			useSnow *= when_gt(IN.worldPos.y,0.02f);
 
@@ -212,19 +267,25 @@
 
 			float3 worldWithOffset = IN.worldPos + _BreakOffset;
 
-			float2 fc = float2((worldWithOffset.x + worldWithOffset.y), (worldWithOffset.z + worldWithOffset.y));
+			float4 quaternion = rotationTo(float3(0.5773, 0.5773, 0.5773), float3(0, 1, 0)); // normal = forward, in this case.
+            float3 fc = rotateVector(quaternion, worldWithOffset);
+
 
 			float3 col = float3(1.0, 1.0, 1.0);
 
-			float vor = 1.0 - voronoi(fc / 0.30).x;
+			float vor = voronoi(fc / 0.45).x;
 			float radius = _BreakPoint.w;
-			float cv = clamp(radius - length(_BreakPoint.xyz - IN.worldPos), 0.0, 1.0);
+			float cv = clamp(radius - length(_BreakPoint.xyz - IN.worldPos), 0.0, 0.5);
 			
-			o.Albedo = lerp(float3(0, 0, 0),
-				o.Albedo,
-				smoothstep(0.0,
-					0.07 * cv,
-					1.0 - vor));
+			float isCrack = smoothstep(0.0,
+					0.04 * cv,
+					vor);
+
+			o.Albedo = lerp(o.Albedo,
+				float3(0, 0, 0),
+				when_lt(isCrack, 0.95));
+
+			//o.Albedo = float3(vor, vor, vor);
 		}
 		ENDCG
 	} 

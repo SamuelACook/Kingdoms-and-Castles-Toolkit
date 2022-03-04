@@ -4,91 +4,175 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_Name: ogretex
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 09a5ac92c066ce94090980fdda53b399, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
-  disabledShaderPasses: []
   m_SavedProperties:
-    serializedVersion: 3
+    serializedVersion: 2
     m_TexEnvs:
-    - _BumpMap:
+    - first:
+        name: _BumpMap
+      second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _DetailAlbedoMap:
+    - first:
+        name: _DetailAlbedoMap
+      second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _DetailMask:
+    - first:
+        name: _DetailMask
+      second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _DetailNormalMap:
+    - first:
+        name: _DetailNormalMap
+      second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
+    - first:
+        name: _EmissionMap
+      second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _MainTex:
+    - first:
+        name: _MainTex
+      second:
         m_Texture: {fileID: 2800000, guid: 91416197a1c66d3489d54ff19953f7c5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
+    - first:
+        name: _MetallicGlossMap
+      second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
+    - first:
+        name: _OcclusionMap
+      second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _ParallaxMap:
+    - first:
+        name: _ParallaxMap
+      second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _AlphaCutoff: 0.5
-    - _BumpScale: 1
-    - _Cutoff: 0.5
-    - _DamageAlpha: 0
-    - _DamageFlash: 1
-    - _DetailNormalMapScale: 1
-    - _Disabled: 0
-    - _DstBlend: 0
-    - _FrameSize: 0.1
-    - _GlossMapScale: 1
-    - _Glossiness: 0
-    - _GlossyReflections: 1
-    - _Invalid: 0
-    - _MaxHeight: 1
-    - _Metallic: 0
-    - _MinHeight: 0
-    - _Mode: 0
-    - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _ScaffoldAdvance: 0.2
-    - _SmoothnessTextureChannel: 0
-    - _Snow: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _T: 0
-    - _Thickness: 0.025
-    - _UVSec: 0
-    - _WallProgress: 1
-    - _ZWrite: 1
+    - first:
+        name: _AlphaCutoff
+      second: 0.5
+    - first:
+        name: _BumpScale
+      second: 1
+    - first:
+        name: _Cutoff
+      second: 0.5
+    - first:
+        name: _DamageAlpha
+      second: 0
+    - first:
+        name: _DamageFlash
+      second: 1
+    - first:
+        name: _DetailNormalMapScale
+      second: 1
+    - first:
+        name: _Disabled
+      second: 0
+    - first:
+        name: _DstBlend
+      second: 0
+    - first:
+        name: _FrameSize
+      second: 0.1
+    - first:
+        name: _GlossMapScale
+      second: 1
+    - first:
+        name: _Glossiness
+      second: 0
+    - first:
+        name: _GlossyReflections
+      second: 1
+    - first:
+        name: _Invalid
+      second: 0
+    - first:
+        name: _MaxHeight
+      second: 1
+    - first:
+        name: _Metallic
+      second: 0
+    - first:
+        name: _MinHeight
+      second: 0
+    - first:
+        name: _Mode
+      second: 0
+    - first:
+        name: _OcclusionStrength
+      second: 1
+    - first:
+        name: _Parallax
+      second: 0.02
+    - first:
+        name: _ScaffoldAdvance
+      second: 0.2
+    - first:
+        name: _SmoothnessTextureChannel
+      second: 0
+    - first:
+        name: _Snow
+      second: 0
+    - first:
+        name: _SpecularHighlights
+      second: 1
+    - first:
+        name: _SrcBlend
+      second: 1
+    - first:
+        name: _T
+      second: 0
+    - first:
+        name: _Thickness
+      second: 0.025
+    - first:
+        name: _UVSec
+      second: 0
+    - first:
+        name: _WallProgress
+      second: 1
+    - first:
+        name: _ZWrite
+      second: 1
     m_Colors:
-    - _BreakPoint: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorA: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorB: {r: 0, g: 0, b: 0, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SnowColor: {r: 0.933, g: 0.933, b: 0.909, a: 1}
+    - first:
+        name: _BreakPoint
+      second: {r: 0, g: 0, b: 0, a: 0}
+    - first:
+        name: _Color
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _ColorA
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _ColorB
+      second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _EmissionColor
+      second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _SnowColor
+      second: {r: 0.933, g: 0.933, b: 0.909, a: 1}

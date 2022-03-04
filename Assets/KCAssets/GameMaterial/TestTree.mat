@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: TestTree
-  m_Shader: {fileID: 4800000, guid: a4c262b930c2bdc49b98b81abaed64c6, type: 3}
+  m_Shader: {fileID: 4800000, guid: c2a659511f0fcac47b0bc623c33e4242, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
@@ -74,5 +74,8 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color1: {r: 0.26337308, g: 0.4056604, b: 0.082280174, a: 1}
+    - _Color2: {r: 0.30238566, g: 0.4433962, b: 0.06065327, a: 1}
+    - _Color3: {r: 0.14545803, g: 0.3773585, b: 0.04805981, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SnowColor: {r: 0.77205884, g: 0.84584177, b: 0.88235295, a: 1}

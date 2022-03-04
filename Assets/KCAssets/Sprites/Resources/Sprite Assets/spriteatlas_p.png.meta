@@ -1,22 +1,78 @@
 fileFormatVersion: 2
 guid: 468fa59ca50965b41b2f272cf04ac899
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: icon_charcoal
-    21300002: icon_food
-    21300004: icon_gold
-    21300006: icon_iron
-    21300008: icon_stone
-    21300010: icon_wood
-    21300012: icon_tools
-    21300014: icon_magglass
-    21300016: icon_armaments
-    21300018: icon_person
-    21300020: icon_fish
-    21300022: icon_apple
-    21300024: icon_pork
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: icon_charcoal
+  - first:
+      213: 21300002
+    second: icon_food
+  - first:
+      213: 21300004
+    second: icon_gold
+  - first:
+      213: 21300006
+    second: icon_iron
+  - first:
+      213: 21300008
+    second: icon_stone
+  - first:
+      213: 21300010
+    second: icon_wood
+  - first:
+      213: 21300012
+    second: icon_tools
+  - first:
+      213: 21300014
+    second: icon_magglass
+  - first:
+      213: 21300016
+    second: icon_armaments
+  - first:
+      213: 21300018
+    second: icon_person
+  - first:
+      213: 21300020
+    second: icon_fish
+  - first:
+      213: 21300022
+    second: icon_apple
+  - first:
+      213: 21300024
+    second: icon_pork
+  - first:
+      213: 21300026
+    second: icon_console_button_a
+  - first:
+      213: 21300028
+    second: spriteatlas_p_1
+  - first:
+      213: 21300030
+    second: icon_console_button_y
+  - first:
+      213: 21300032
+    second: icon_console_button_b
+  - first:
+      213: 21300034
+    second: icon_console_button_x
+  - first:
+      213: 21300036
+    second: icon_console_dpad_up
+  - first:
+      213: 21300038
+    second: icon_console_dpad_right
+  - first:
+      213: 21300040
+    second: icon_console_dpad_down
+  - first:
+      213: 21300042
+    second: icon_console_dpad_left
+  - first:
+      213: 21300044
+    second: icon_console_dpad
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -44,9 +100,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -70,8 +126,9 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  applyGammaDecoding: 1
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -82,7 +139,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -93,7 +151,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -104,7 +163,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -115,6 +175,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -134,6 +195,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f48c3b0c4db987e45ac9d7bdb27a0195
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -154,6 +216,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c95e2d78bcee79b45b365164e3f153df
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -174,6 +237,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a1f8baf392759fa4f982287c3893b561
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -194,6 +258,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 31fe81bfdc13ae949b0bdad885549aed
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -214,6 +279,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 60ff4d5de7d8aee4781464f33ca62b69
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -234,6 +300,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d2045d3908a817c4ab333b1ca6bc3632
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -254,6 +321,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 278e12270a56dd44283e0158f9578c37
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -274,6 +342,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bc77c52a0b5b7be45bde7cf1f357ff79
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
@@ -294,6 +363,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d5f36958b11a28141b85fd43b9e35578
+      internalID: 21300016
       vertices: []
       indices: 
       edges: []
@@ -314,6 +384,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 91afbc40e9f392b48bf5cb4bdc262f98
+      internalID: 21300018
       vertices: []
       indices: 
       edges: []
@@ -334,6 +405,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 93242c18ac72bf34a8cab3bf0d79db4f
+      internalID: 21300020
       vertices: []
       indices: 
       edges: []
@@ -354,6 +426,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9f428b2c4224dee4fb405b6db3f02f26
+      internalID: 21300022
       vertices: []
       indices: 
       edges: []
@@ -367,13 +440,224 @@ TextureImporter:
         width: 129
         height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: bcb227aed26f57948a756817f8e1393d
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_console_button_a
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 258
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8444a77f31d894b9d54770f169a32a
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteatlas_p_1
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 264
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bac68ecd476b5545a27c726fc1adaaf
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_console_button_y
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 258
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5915a0380ea0da446903776a46a5e886
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_console_button_b
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8afdadf0b16b54591d98f42737b9e3
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_console_button_x
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67642ec5c7a64b64ab92f32e9c66e658
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_console_dpad_up
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b4d8435da80674ba7458861f3b2572
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_console_dpad_right
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b9dbac64888d3243ad409a382c9b31d
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_console_dpad_down
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7586d1fb7d53dff49973e814996c9321
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_console_dpad_left
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a3c581d66ea374294bedeba3af2f74
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_console_dpad
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f46d2c1c11820d48ac6cc3964df82f7
+      internalID: 21300044
       vertices: []
       indices: 
       edges: []
@@ -382,10 +666,12 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 68e1b5cf4992f6244a0c51ab01d49a1a
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

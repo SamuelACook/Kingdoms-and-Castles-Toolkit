@@ -4,7 +4,8 @@
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
   - component: {fileID: 421008}
@@ -15,11 +16,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &421008
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145886}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: -0.075, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4841747977893634}
+  m_Father: {fileID: 485408}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &162530
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
   - component: {fileID: 485408}
@@ -32,25 +49,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &421008
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145886}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: -0.075, z: 0.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4841747977893634}
-  m_Father: {fileID: 485408}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &485408
 Transform:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162530}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.756579, y: -1.9964855, z: 35.556705}
@@ -60,39 +64,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &11400318
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 162530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 018cc4ee11fb6bf4ebbe3c3280a9e39e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Straight: {fileID: 400000, guid: 85a99989d2c8caf419fdd45a57471bab, type: 3}
-  Elbow: {fileID: 400000, guid: 76bcbbc36ee93844aa5a5015c493364e, type: 3}
-  Intersection3: {fileID: 400000, guid: e1217c39ff61c9a4da7d9de580f793e9, type: 3}
-  Intersection4: {fileID: 400000, guid: ae332612b70d083468a1da0950cc64dc, type: 3}
-  isBridge: 1
 --- !u!114 &11449584
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162530}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ef0019ec1249abe43a8ef3ab1ca9bc52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartedNewYieldThisFrame: 1
   JobCategory: 11
   placementSounds:
   - bridgePlacement
   SelectionSounds:
   - BuildingSelectBridge_V2
+  selectedAmbientSound: 
   UniqueName: stonebridge
   CategoryName: path
   DisplayModel: {fileID: 0}
@@ -102,12 +91,15 @@ MonoBehaviour:
   Cost:
     Wheat: 0
     Tree: 3
-    Stone: 35
+    Stone: 20
     Charcoal: 0
     Gold: 25
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   CollectedForBuild:
     Wheat: 0
     Tree: 0
@@ -117,6 +109,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   TotalPromisedBuildResources:
     Wheat: 0
     Tree: 0
@@ -126,6 +121,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   Stackable: 0
   StackHeight: 0
   BuildShaderMinYAdjustment: 0
@@ -136,107 +134,60 @@ MonoBehaviour:
   builtTime: -Infinity
   dragPlacementMode: 1
   ignoreRoadCoverageForPlacement: 1
-  useSharedMaterialIfPossible: 1
   showHappinessOverlay: 0
+  isDemolishing: 0
   doBuildAnimation: 1
   fireChance: 0
   BuildTimeAtMax: 5
   BuildAllowedWorkers: 7
   BuildersRequiredOnLocation: 0
-  Yield:
-    Wheat: 0
-    Tree: 0
-    Stone: 0
-    Charcoal: 0
-    Gold: 0
-    Iron: 0
-    Tools: 0
-    Armament: 0
-  YieldInterval: 5
   WorkersForFullYield: 0
-  YieldIntervalMod: 1
+  AttractionSeats: 0
   constructionProgress: 0
+  decayRate: 0.1
+  decayChance: -1
+  decayProtection: 0
+  transportCartsCanTravelOn: 1
+  troopsCanWalkOn: 1
   allowOverAndUnderAqueducts: 0
-  PauseYield: 0
+  allowCastleBlocksOnTop: 0
   Life: 1
   ModifiedMaxLife: 1
   MaxLife: 1
---- !u!1001 &100100000
-Prefab:
-  m_ObjectHideFlags: 1
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: BuildTimeAtMax
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: BuildAllowedWorkers
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: WorkersForFullYield
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2c10954afcc37274ebb153abd7c11b1a, type: 2}
-    - target: {fileID: 0}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: Intersection4
-      value: 
-      objectReference: {fileID: 400000, guid: 1fba7979c1ed81b4aa7a54302598d6d5, type: 3}
-    - target: {fileID: 0}
-      propertyPath: Elbow
-      value: 
-      objectReference: {fileID: 400000, guid: 48bfcd777806c7d428f9989b0f227e96, type: 3}
-    - target: {fileID: 0}
-      propertyPath: Straight
-      value: 
-      objectReference: {fileID: 400000, guid: c0e9d7d7d03ab414598da22278a78b91, type: 3}
-    - target: {fileID: 0}
-      propertyPath: Intersection3
-      value: 
-      objectReference: {fileID: 400000, guid: 0ae6bd549b79a014393daddfcb9cf9a1, type: 3}
-    - target: {fileID: 0}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: Bridge
-      value: 
-      objectReference: {fileID: 400000, guid: 2a69d4fa62d75124992f771218e4fe87, type: 3}
-    - target: {fileID: 0}
-      propertyPath: doBuildAnimation
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: Cost.Wood
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: Description
-      value: Expands buildable area
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 162530}
-  m_IsPrefabAsset: 1
+--- !u!114 &11400318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 018cc4ee11fb6bf4ebbe3c3280a9e39e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Straight: {fileID: 400000, guid: 85a99989d2c8caf419fdd45a57471bab, type: 3}
+  Elbow: {fileID: 400000, guid: 76bcbbc36ee93844aa5a5015c493364e, type: 3}
+  Intersection3: {fileID: 400000, guid: e1217c39ff61c9a4da7d9de580f793e9, type: 3}
+  Intersection4: {fileID: 400000, guid: ae332612b70d083468a1da0950cc64dc, type: 3}
+  Single: {fileID: 400000, guid: 38cfb09ae810d0e42a678efa82692f59, type: 3}
+  DeadEnd: {fileID: 400000, guid: c83654a55decfa544915591c13828555, type: 3}
+  ElbowFilled: {fileID: 400000, guid: f6d909f8b29c4ef4482e200651046a7a, type: 3}
+  ThreeLeft: {fileID: 400000, guid: 835e7a80a2ed1e24f927efa7a1177b66, type: 3}
+  ThreeRight: {fileID: 400000, guid: f35714d76719f98499631f47d31477e5, type: 3}
+  ThreeFilled: {fileID: 400000, guid: 0ec5886ebd84ea243a78f8d10658a4d4, type: 3}
+  FourOne: {fileID: 400000, guid: d5664af0814def34b9bd189e3412ebc2, type: 3}
+  FourTwo: {fileID: 400000, guid: 0445db7cd7296874e9e3956574a26b71, type: 3}
+  FourTwoDiagonal: {fileID: 400000, guid: 4e3c3480b3cd8e94f9d4b60f3d0b8c7b, type: 3}
+  FourThree: {fileID: 400000, guid: 7d3f5d95e6f4fd04086453071e9d865a, type: 3}
+  Full: {fileID: 400000, guid: fb362ac605f906245923e90214eb11e8, type: 3}
+  isBridge: 1
 --- !u!1 &1215212918776692
 GameObject:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4841747977893634}
@@ -253,9 +204,10 @@ GameObject:
   m_IsActive: 1
 --- !u!4 &4841747977893634
 Transform:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1215212918776692}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
@@ -264,11 +216,20 @@ Transform:
   m_Father: {fileID: 421008}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33516177700121456
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215212918776692}
+  m_Mesh: {fileID: 4300004, guid: 85a99989d2c8caf419fdd45a57471bab, type: 3}
 --- !u!23 &23579167370821584
 MeshRenderer:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1215212918776692}
   m_Enabled: 1
   m_CastShadows: 1
@@ -277,7 +238,9 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 4294967295
+  m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 60e5b33be8cf4d540b06e8defec2374d, type: 2}
   m_StaticBatchInfo:
@@ -287,6 +250,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -299,18 +263,12 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33516177700121456
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1215212918776692}
-  m_Mesh: {fileID: 4300004, guid: 85a99989d2c8caf419fdd45a57471bab, type: 3}
 --- !u!65 &65819761266547722
 BoxCollider:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1215212918776692}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -320,9 +278,10 @@ BoxCollider:
   m_Center: {x: 0, y: 0.25, z: 0}
 --- !u!114 &114268422200330284
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1215212918776692}
   m_Enabled: 1
   m_EditorHideFlags: 0

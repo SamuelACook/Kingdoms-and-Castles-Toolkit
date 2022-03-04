@@ -57,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 110454}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.38102, y: -3.3493586, z: 8.501524}
+  m_LocalPosition: {x: 8.342651, y: -3.405745, z: 7.6285825}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 402932}
@@ -75,7 +75,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef0019ec1249abe43a8ef3ab1ca9bc52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartedNewYieldThisFrame: 1
   JobCategory: 11
   placementSounds: []
   SelectionSounds:
@@ -92,9 +91,12 @@ MonoBehaviour:
     Stone: 0
     Charcoal: 0
     Gold: 150
-    Iron: 25
+    Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   CollectedForBuild:
     Wheat: 0
     Tree: 0
@@ -104,6 +106,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   TotalPromisedBuildResources:
     Wheat: 0
     Tree: 0
@@ -113,6 +118,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   Stackable: 0
   StackHeight: 0
   BuildShaderMinYAdjustment: 0
@@ -127,28 +135,20 @@ MonoBehaviour:
   builtTime: -Infinity
   dragPlacementMode: 0
   ignoreRoadCoverageForPlacement: 1
-  useSharedMaterialIfPossible: 1
   showHappinessOverlay: 0
+  isDemolishing: 0
   doBuildAnimation: 1
   fireChance: 0.5
   BuildTimeAtMax: 10
   BuildAllowedWorkers: 7
   BuildersRequiredOnLocation: 0
-  Yield:
-    Wheat: 0
-    Tree: 0
-    Stone: 0
-    Charcoal: 0
-    Gold: 0
-    Iron: 0
-    Tools: 0
-    Armament: 0
-  YieldInterval: 12
   WorkersForFullYield: 6
-  YieldIntervalMod: 1
+  AttractionSeats: 0
   constructionProgress: 0
+  decayRate: 0.1
+  decayChance: -1
+  decayProtection: 0
   allowOverAndUnderAqueducts: 0
-  PauseYield: 0
   Life: 1
   ModifiedMaxLife: 1
   MaxLife: 2
@@ -263,6 +263,8 @@ GameObject:
   - component: {fileID: 4957535616593936}
   - component: {fileID: 33576882100530918}
   - component: {fileID: 23803412293155012}
+  - component: {fileID: 65842450837795258}
+  - component: {fileID: 114766698372094328}
   m_Layer: 0
   m_Name: trooptransportship
   m_TagString: Untagged
@@ -407,6 +409,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1731991143812086}
   m_Mesh: {fileID: 4300004, guid: cb6bfbde6f58be4459314484a9d1c7d6, type: 3}
+--- !u!65 &65842450837795258
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1731991143812086}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1308186, y: 1.47, z: 2.5209117}
+  m_Center: {x: -0.000999093, y: 0.77, z: 0.005910158}
 --- !u!114 &114089745084268404
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -420,3 +434,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actualTransformShipPrefab: {fileID: 4520180494783278, guid: 554a8639d20812046bce92e7a6eaf507,
     type: 2}
+--- !u!114 &114766698372094328
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1731991143812086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d162957604f004b429e8414b3cf4bf2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Building: {fileID: 0}
+  Collider: {fileID: 0}

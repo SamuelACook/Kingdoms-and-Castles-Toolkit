@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 3330370}
   - component: {fileID: 2389728}
   - component: {fileID: 114552493334215938}
-  - component: {fileID: 65583415476438320}
+  - component: {fileID: 65041327713892258}
   m_Layer: 0
   m_Name: Quarry
   m_TagString: Untagged
@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 11483090}
   - component: {fileID: 11419036}
   - component: {fileID: 11161478}
+  - component: {fileID: 114657845671462022}
   m_Layer: 8
   m_Name: Quarry
   m_TagString: Quarry
@@ -182,7 +183,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 128472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.35399997, y: 0.29, z: -0.44899988}
+  m_LocalPosition: {x: 0.168, y: 0.29, z: -0.44899988}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 407176}
@@ -195,7 +196,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 129512}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.025, y: 0.025, z: -0.435}
+  m_LocalPosition: {x: -0.393, y: 0.025, z: -0.163}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 407176}
@@ -221,7 +222,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 124908}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.35399997, y: 0.29, z: -0.09800005}
+  m_LocalPosition: {x: 0.35399997, y: 0.29, z: 0.009}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 407176}
@@ -250,7 +251,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197526}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 56.54347, y: -3.9871788, z: 36.993702}
+  m_LocalPosition: {x: 38.129337, y: -26.566166, z: 21.804998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 483288}
@@ -320,7 +321,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b20ead99f49e3400ea332ddfba610b61, type: 2}
+  - {fileID: 2100000, guid: bd13d776da421f646bc71020687b561f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -346,7 +347,7 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 127110}
-  m_Mesh: {fileID: 4300000, guid: 7143f11cfe3a37749b7039dee0b0eb38, type: 3}
+  m_Mesh: {fileID: 4300000, guid: e2735ddd4a69176458e198eb5665c308, type: 3}
 --- !u!33 &3376376
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -394,7 +395,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef0019ec1249abe43a8ef3ab1ca9bc52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartedNewYieldThisFrame: 1
   JobCategory: 23
   placementSounds: []
   SelectionSounds:
@@ -456,31 +456,16 @@ MonoBehaviour:
   builtTime: -Infinity
   dragPlacementMode: 0
   ignoreRoadCoverageForPlacement: 0
-  useSharedMaterialIfPossible: 0
   showHappinessOverlay: 0
   doBuildAnimation: 1
   fireChance: 0.5
   BuildTimeAtMax: 10
   BuildAllowedWorkers: 5
   BuildersRequiredOnLocation: 0
-  Yield:
-    Wheat: 0
-    Tree: 0
-    Stone: 2
-    Charcoal: 0
-    Gold: 0
-    Iron: 0
-    Tools: 0
-    Armament: 0
-    Fish: 0
-    Apple: 0
-    Pork: 0
-  YieldInterval: 15
   WorkersForFullYield: 4
-  YieldIntervalMod: 1
+  AttractionSeats: 0
   constructionProgress: 0
   allowOverAndUnderAqueducts: 1
-  PauseYield: 0
   Life: 1
   ModifiedMaxLife: 1
   MaxLife: 1
@@ -569,7 +554,7 @@ Transform:
   m_Father: {fileID: 483288}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &65583415476438320
+--- !u!65 &65041327713892258
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -579,8 +564,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.99999994, y: 0.19, z: 0.99999994}
-  m_Center: {x: 0, y: 0.05, z: 0}
+  m_Size: {x: 1.034022, y: 0.4437717, z: 1.0092462}
+  m_Center: {x: 0.035590053, y: 0.18883662, z: -0.022429109}
 --- !u!114 &114552493334215938
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -594,6 +579,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Building: {fileID: 0}
   Collider: {fileID: 0}
+--- !u!114 &114657845671462022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 241a9257096ac1746b3ae549f039c6cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Yield:
+    Wheat: 0
+    Tree: 0
+    Stone: 2
+    Charcoal: 0
+    Gold: 0
+    Iron: 0
+    Tools: 0
+    Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
+  YieldInterval: 15
+  YieldIntervalMod: 1
+  PauseYield: 0
 --- !u!114 &114713801975378714
 MonoBehaviour:
   m_ObjectHideFlags: 1

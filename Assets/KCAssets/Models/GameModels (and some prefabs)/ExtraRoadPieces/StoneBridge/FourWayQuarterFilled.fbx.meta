@@ -1,0 +1,208 @@
+fileFormatVersion: 2
+guid: d5664af0814def34b9bd189e3412ebc2
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Stone Bridge - Base (Mirror)
+    100004: Stone Bridge - Dead End
+    100006: Stone Bridge - Dead End.001
+    100008: Stone Bridge - Dead End.002
+    100010: Stone Bridge - Dead End.003
+    100012: Stone Bridge - Elbow Filled
+    100014: Stone Bridge - Elbow Filled.001
+    100016: Stone Bridge - Elbow Filled.002
+    100018: Stone Bridge - Four-way Filled
+    100020: Stone Bridge - Four-way Filled.001
+    100022: Stone Bridge - Four-way Half Filled
+    100024: Stone Bridge - Four-way Half Filled.001
+    100026: Stone Bridge - Four-way Half Filled.002
+    100028: Stone Bridge - Four-way Half Filled.003
+    100030: Stone Bridge - Four-way Quarter Filled
+    100032: Stone Bridge - Inner Corner
+    100034: Stone Bridge - Inner Corner.001
+    100036: Stone Bridge - Inner Corner.002
+    100038: Stone Bridge - Inner Corner.003
+    100040: Stone Bridge - Single
+    100042: Stone Bridge - Single.001
+    100044: Stone Bridge - Single.002
+    100046: Stone Bridge - Single.003
+    400000: //RootNode
+    400002: Stone Bridge - Base (Mirror)
+    400004: Stone Bridge - Dead End
+    400006: Stone Bridge - Dead End.001
+    400008: Stone Bridge - Dead End.002
+    400010: Stone Bridge - Dead End.003
+    400012: Stone Bridge - Elbow Filled
+    400014: Stone Bridge - Elbow Filled.001
+    400016: Stone Bridge - Elbow Filled.002
+    400018: Stone Bridge - Four-way Filled
+    400020: Stone Bridge - Four-way Filled.001
+    400022: Stone Bridge - Four-way Half Filled
+    400024: Stone Bridge - Four-way Half Filled.001
+    400026: Stone Bridge - Four-way Half Filled.002
+    400028: Stone Bridge - Four-way Half Filled.003
+    400030: Stone Bridge - Four-way Quarter Filled
+    400032: Stone Bridge - Inner Corner
+    400034: Stone Bridge - Inner Corner.001
+    400036: Stone Bridge - Inner Corner.002
+    400038: Stone Bridge - Inner Corner.003
+    400040: Stone Bridge - Single
+    400042: Stone Bridge - Single.001
+    400044: Stone Bridge - Single.002
+    400046: Stone Bridge - Single.003
+    2100000: KCMaterial
+    2300000: Stone Bridge - Base (Mirror)
+    2300002: Stone Bridge - Dead End
+    2300004: Stone Bridge - Dead End.001
+    2300006: Stone Bridge - Dead End.002
+    2300008: Stone Bridge - Dead End.003
+    2300010: Stone Bridge - Elbow Filled
+    2300012: Stone Bridge - Elbow Filled.001
+    2300014: Stone Bridge - Elbow Filled.002
+    2300016: Stone Bridge - Four-way Filled
+    2300018: Stone Bridge - Four-way Filled.001
+    2300020: Stone Bridge - Four-way Half Filled
+    2300022: Stone Bridge - Four-way Half Filled.001
+    2300024: Stone Bridge - Four-way Half Filled.002
+    2300026: Stone Bridge - Four-way Half Filled.003
+    2300028: Stone Bridge - Four-way Quarter Filled
+    2300030: Stone Bridge - Inner Corner
+    2300032: Stone Bridge - Inner Corner.001
+    2300034: Stone Bridge - Inner Corner.002
+    2300036: Stone Bridge - Inner Corner.003
+    2300038: Stone Bridge - Single
+    2300040: Stone Bridge - Single.001
+    2300042: Stone Bridge - Single.002
+    2300044: Stone Bridge - Single.003
+    2300046: //RootNode
+    3300000: Stone Bridge - Base (Mirror)
+    3300002: Stone Bridge - Dead End
+    3300004: Stone Bridge - Dead End.001
+    3300006: Stone Bridge - Dead End.002
+    3300008: Stone Bridge - Dead End.003
+    3300010: Stone Bridge - Elbow Filled
+    3300012: Stone Bridge - Elbow Filled.001
+    3300014: Stone Bridge - Elbow Filled.002
+    3300016: Stone Bridge - Four-way Filled
+    3300018: Stone Bridge - Four-way Filled.001
+    3300020: Stone Bridge - Four-way Half Filled
+    3300022: Stone Bridge - Four-way Half Filled.001
+    3300024: Stone Bridge - Four-way Half Filled.002
+    3300026: Stone Bridge - Four-way Half Filled.003
+    3300028: Stone Bridge - Four-way Quarter Filled
+    3300030: Stone Bridge - Inner Corner
+    3300032: Stone Bridge - Inner Corner.001
+    3300034: Stone Bridge - Inner Corner.002
+    3300036: Stone Bridge - Inner Corner.003
+    3300038: Stone Bridge - Single
+    3300040: Stone Bridge - Single.001
+    3300042: Stone Bridge - Single.002
+    3300044: Stone Bridge - Single.003
+    3300046: //RootNode
+    4300000: Stone Bridge - Base (Mirror)
+    4300002: Stone Bridge - Single
+    4300004: Stone Bridge - Single.001
+    4300006: Stone Bridge - Single.003
+    4300008: Stone Bridge - Single.002
+    4300010: Stone Bridge - Dead End
+    4300012: Stone Bridge - Dead End.001
+    4300014: Stone Bridge - Dead End.002
+    4300016: Stone Bridge - Dead End.003
+    4300018: Stone Bridge - Elbow Filled
+    4300020: Stone Bridge - Elbow Filled.001
+    4300022: Stone Bridge - Elbow Filled.002
+    4300024: Stone Bridge - Four-way Filled
+    4300026: Stone Bridge - Four-way Filled.001
+    4300028: Stone Bridge - Four-way Half Filled
+    4300030: Stone Bridge - Four-way Half Filled.001
+    4300032: Stone Bridge - Four-way Half Filled.002
+    4300034: Stone Bridge - Four-way Half Filled.003
+    4300036: Stone Bridge - Inner Corner
+    4300038: Stone Bridge - Inner Corner.002
+    4300040: Stone Bridge - Inner Corner.001
+    4300042: Stone Bridge - Inner Corner.003
+    4300044: Stone Bridge - Four-way Quarter Filled
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: fullroadbundle
+  assetBundleVariant: 

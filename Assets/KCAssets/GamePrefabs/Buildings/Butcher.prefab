@@ -78,11 +78,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef0019ec1249abe43a8ef3ab1ca9bc52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartedNewYieldThisFrame: 1
   JobCategory: 33
   placementSounds: []
   SelectionSounds:
-  - BuildingSelectBakery
+  - BuildingSelectButcher
   UniqueName: butcher
   CategoryName: butcher
   DisplayModel: {fileID: 0}
@@ -140,31 +139,23 @@ MonoBehaviour:
   builtTime: -Infinity
   dragPlacementMode: 0
   ignoreRoadCoverageForPlacement: 0
-  useSharedMaterialIfPossible: 1
   showHappinessOverlay: 0
+  isDemolishing: 0
   doBuildAnimation: 1
   fireChance: 0.5
   BuildTimeAtMax: 10
   BuildAllowedWorkers: 7
   BuildersRequiredOnLocation: 0
-  Yield:
-    Wheat: 0
-    Tree: 0
-    Stone: 0
-    Charcoal: 0
-    Gold: 0
-    Iron: 0
-    Tools: 0
-    Armament: 0
-    Fish: 4
-    Apple: 0
-    Pork: 0
-  YieldInterval: 10
   WorkersForFullYield: 7
-  YieldIntervalMod: 1
+  AttractionSeats: 0
   constructionProgress: 0
+  decayRate: 0.1
+  decayChance: -1
+  decayProtection: 0
+  transportCartsCanTravelOn: 0
+  troopsCanWalkOn: 0
   allowOverAndUnderAqueducts: 0
-  PauseYield: 0
+  allowCastleBlocksOnTop: 0
   Life: 1
   ModifiedMaxLife: 1
   MaxLife: 1
@@ -7873,7 +7864,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GraphicalStack: {fileID: 114326665159810988}
   StackType: 11
-  prefab: {fileID: 0}
 --- !u!114 &114687512428372746
 MonoBehaviour:
   m_ObjectHideFlags: 1

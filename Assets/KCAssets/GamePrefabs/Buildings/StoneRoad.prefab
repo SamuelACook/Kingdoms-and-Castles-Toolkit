@@ -76,6 +76,17 @@ MonoBehaviour:
   Elbow: {fileID: 400000, guid: 8cb7618361a0ed04c80f2313a2aa57e3, type: 3}
   Intersection3: {fileID: 400000, guid: 70676c1adf13cf34fbc34783761462ca, type: 3}
   Intersection4: {fileID: 400000, guid: 2a783eaaf9b7f5642b4aa279fcfc93c8, type: 3}
+  Single: {fileID: 400000, guid: e426dee4eca98124cba0cc6f2c425af8, type: 3}
+  DeadEnd: {fileID: 400000, guid: 992edce7e2359454f9156fbb5fdf5336, type: 3}
+  ElbowFilled: {fileID: 400000, guid: df3c4fee36a3ffb45b1fbf365958f6a9, type: 3}
+  ThreeLeft: {fileID: 400000, guid: 843f3b3f170391c419891f35557514ee, type: 3}
+  ThreeRight: {fileID: 400000, guid: 6c32b834c8fec5144bb569d8a75df49e, type: 3}
+  ThreeFilled: {fileID: 400000, guid: a82acc6a99a1ae24385c4f64ea2b0743, type: 3}
+  FourOne: {fileID: 400000, guid: 9c330adf44f65084fa0db3c25e2cbdb6, type: 3}
+  FourTwo: {fileID: 400000, guid: db1da133b67ba414b87c691915378c47, type: 3}
+  FourTwoDiagonal: {fileID: 400000, guid: eebcca356ef61474d98b5b047e1ac8ca, type: 3}
+  FourThree: {fileID: 400000, guid: 3d23d0135637fad44ad2e289e4e00ff1, type: 3}
+  Full: {fileID: 400000, guid: 592f37502f2df0749b75f55a565e04b2, type: 3}
   isBridge: 0
 --- !u!114 &11449584
 MonoBehaviour:
@@ -88,7 +99,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef0019ec1249abe43a8ef3ab1ca9bc52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartedNewYieldThisFrame: 1
   JobCategory: 11
   placementSounds:
   - roadplacement
@@ -109,6 +119,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   CollectedForBuild:
     Wheat: 0
     Tree: 0
@@ -118,6 +131,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   TotalPromisedBuildResources:
     Wheat: 0
     Tree: 0
@@ -127,6 +143,9 @@ MonoBehaviour:
     Iron: 0
     Tools: 0
     Armament: 0
+    Fish: 0
+    Apple: 0
+    Pork: 0
   Stackable: 0
   StackHeight: 0
   BuildShaderMinYAdjustment: 0.1
@@ -138,28 +157,23 @@ MonoBehaviour:
   builtTime: -Infinity
   dragPlacementMode: 1
   ignoreRoadCoverageForPlacement: 1
-  useSharedMaterialIfPossible: 1
   showHappinessOverlay: 0
+  isDemolishing: 0
   doBuildAnimation: 1
   fireChance: 0
   BuildTimeAtMax: 1
   BuildAllowedWorkers: 1
   BuildersRequiredOnLocation: 0
-  Yield:
-    Wheat: 0
-    Tree: 0
-    Stone: 0
-    Charcoal: 0
-    Gold: 0
-    Iron: 0
-    Tools: 0
-    Armament: 0
-  YieldInterval: 5
   WorkersForFullYield: 0
-  YieldIntervalMod: 1
+  AttractionSeats: 0
   constructionProgress: 0
+  decayRate: 0.1
+  decayChance: 2
+  decayProtection: 0
+  transportCartsCanTravelOn: 1
+  troopsCanWalkOn: 1
   allowOverAndUnderAqueducts: 1
-  PauseYield: 0
+  allowCastleBlocksOnTop: 0
   Life: 1
   ModifiedMaxLife: 1
   MaxLife: 1
